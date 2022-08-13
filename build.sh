@@ -57,9 +57,6 @@ sed -i "1i\src-link githubaction ${WORKDIR}/buildsource" feeds.conf.default
 ls -l
 cat feeds.conf.default
 
-sed -i "/helloworld/d" "feeds.conf.default"
-echo "src-git helloworld https://github.com/fw876/helloworld.git" >> "feeds.conf.default"
-
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 echo CONFIG_ALL=y >.config
