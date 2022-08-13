@@ -19,7 +19,7 @@ mkdir -p  ${WORKDIR}/buildsource
 cd  ${WORKDIR}/buildsource
 git clone "$SOURCECODEURL"
 cd  ${WORKDIR}
-
+export LC_ALL=C
 
 mips_siflower_sdk_get()
 {
